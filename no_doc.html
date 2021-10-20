@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>Firefly Aerospace - Home</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="banner">
+    <img src="KSP_alpha.png" alt="We Coudn't Load This Image. Sorry!">
+  </div>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper">
+          <a href="index.html">Home</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="alpha.html">Alpha</a>
+        </div>
+        <div class="nav-link-wrapper">
+          <a href="no_doc.html">Launches</a>
+        </div>
+        <div class="nav-link-wrapper">
+          <a href="no_doc.html">Info</a>
+        </div>
+        <div class="nav-link-wrapper">
+          <a href="discord.html">Discord</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="https://www.youtube.com/channel/UCQFunTtNupQwxlWPFuOsA0Q">Youtube</a>
+        </div>
+      </div>
+    </div>
+    </div>
+  <div class="main"><center><h1>This Page Is Currently In Development.</h1></center></div>
+  <div class="submain"><center>This Page Is Currently In Development.<br>
+               Please Try Again Later.</center></div>
+
+</body>
+
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
+
+</html>
